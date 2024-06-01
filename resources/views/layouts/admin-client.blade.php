@@ -38,7 +38,7 @@
 
     <div class="hero_area">
       <div class="bg-box">
-        <img src="{{ asset('assets/images/hero-bg.jpg') }}" alt="">
+        <img src="{{ asset('assets/images/pizza.jpg') }}" alt="">
       </div>
 
 @include('layouts.menu-client')
