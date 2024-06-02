@@ -654,19 +654,186 @@
                     <div id="two-column-menu">
                     </div>
                     <ul class="navbar-nav" id="navbar-nav">
-                        <li class="menu-title"><span data-key="t-menu">Menu</span></li>
+                        <ul class="navbar-nav" id="navbar-nav">
+                            <li class="menu-title"><span data-key="t-menu">Menu</span></li>
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="{{ route('login') }}" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
+                                    <i class="bx bx-home"></i> <span data-key="t-dashboard">Dashboard</span>
+                                </a>
+                            </li>
+                        </ul>
+
+
+
                         <li class="nav-item">
-                            <a class="nav-link menu-link" href="#sidebarDashboards" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
-                                <i class="ri-dashboard-2-line"></i> <span data-key="t-dashboards">Dashboards</span>
+                            <a class="nav-link menu-link" href="#sidebarPedidos" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarPedidos">
+                                <i class="bx bx-cart"></i> <span data-key="t-dashboards">Pedidos</span>
                             </a>
-                            <div class="collapse menu-dropdown" id="sidebarDashboards">
+                            <div class="collapse menu-dropdown" id="sidebarPedidos">
+
                                 <ul class="nav nav-sm flex-column">
                                     <li class="nav-item">
-                                        <a href="{{ route('salon.index') }}" class="nav-link" data-key="t-analytics"> Analytics </a>
+                                        <a href="{{ route('salon.index') }}" class="nav-link" data-key="t-analytics"> Generar </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="{{ route('salon.index') }}" class="nav-link" data-key="t-analytics"> Historial </a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#sidebarInventario" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarInventario">
+                                <i class="bx bx-box"></i> <span data-key="t-dashboards">Inventario</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarInventario">
+
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a href="{{ route('salon.index') }}" class="nav-link" data-key="t-analytics"> Registrar </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="{{ route('salon.index') }}" class="nav-link" data-key="t-analytics"> Historial </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#sidebarCliente" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarCliente">
+                                <i class="bx bx-user"></i> <span data-key="t-dashboards">Clientes</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarCliente">
+
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a href="{{ route('salon.index') }}" class="nav-link" data-key="t-analytics"> Registrar </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="{{ route('salon.index') }}" class="nav-link" data-key="t-analytics"> Historial </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#sidebarControl" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarControl">
+                                <i class="bx bx-comment"></i> <span data-key="t-dashboards">Comentarios</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarControl">
+
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a href="{{ route('salon.index') }}" class="nav-link" data-key="t-analytics"> Suscriptores </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="{{ route('salon.index') }}" class="nav-link" data-key="t-analytics"> Comentarios </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <li class="menu-title"><span data-key="t-menu">Administrador</span></li>
+                            <a class="nav-link menu-link" href="#sdebarBoletas" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sdebarBoletas">
+                                <i class="bx bx-receipt"></i> <span data-key="t-dashboards">Boletas</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sdebarBoletas">
+
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a href="{{ route('salon.index') }}" class="nav-link" data-key="t-analytics"> Generar </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="{{ route('salon.index') }}" class="nav-link" data-key="t-analytics"> Historial </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#sidebarReportes" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarReportes">
+                                <i class="bx bx-chart"></i> <span data-key="t-dashboards">Reportes</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarReportes">
+
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a href="{{ route('salon.index') }}" class="nav-link" data-key="t-analytics"> Ventas </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="{{ route('salon.index') }}" class="nav-link" data-key="t-analytics"> Inventario </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="{{ route('salon.index') }}" class="nav-link" data-key="t-analytics"> Rendimiento  </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#sidebarFinanza" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarFinanza">
+                                <i class="bx bx-dollar"></i> <span data-key="t-dashboards">Finanzas</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarFinanza">
+
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a href="{{ route('salon.index') }}" class="nav-link" data-key="t-analytics"> Ingresos </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="{{ route('salon.index') }}" class="nav-link" data-key="t-analytics"> Gastos </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="{{ route('salon.index') }}" class="nav-link" data-key="t-analytics"> Reporte </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <li class="menu-title"><span data-key="t-menu">Configuraciones</span></li>
+                            <a class="nav-link menu-link" href="#sidebarPublico" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarPublico">
+                                <i class="bx bx-group"></i> <span data-key="t-dashboards">Conf. Publico</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarPublico">
+
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a href="{{ route('salon.index') }}" class="nav-link" data-key="t-analytics"> Menu </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="{{ route('salon.index') }}" class="nav-link" data-key="t-analytics"> Promociones </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="{{ route('salon.index') }}" class="nav-link" data-key="t-analytics"> Inicio de pagina </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="{{ route('salon.index') }}" class="nav-link" data-key="t-analytics"> Pie de pagina </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#sidebarRoles" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarRoles">
+                                <i class="bx bx-lock"></i> <span data-key="t-dashboards">Conf. Roles</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarRoles">
+
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a href="{{ route('salon.index') }}" class="nav-link" data-key="t-analytics"> Perfiles </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="{{ route('salon.index') }}" class="nav-link" data-key="t-analytics"> Permisos </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
                     </ul>
                 </div>
             </div>
