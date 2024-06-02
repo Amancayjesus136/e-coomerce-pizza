@@ -10,4 +10,9 @@ class HomeController extends Controller
     {
         return view('home.inicio');
     }
+
+    public function suscribir()
+    {
+        return view('home.suscriptores');
+    }
 }

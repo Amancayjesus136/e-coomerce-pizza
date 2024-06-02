@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SalonController;
@@ -22,6 +23,7 @@ Route::get('/', function () {
 });
 
 Route::get('/', [HomeController::class, 'index'])->name('home.inicio');
+Route::get('/clientes/suscribir', [HomeController::class, 'suscribir'])->name('home.suscribir');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -34,6 +36,8 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::get('/salon', [SalonController::class, 'index'])->name('salon.index');
+Route::get('/suscriptores', [ClienteController::class, 'suscriptores'])->name('clientes.suscriptores');
+
 
 
 require __DIR__.'/auth.php';
