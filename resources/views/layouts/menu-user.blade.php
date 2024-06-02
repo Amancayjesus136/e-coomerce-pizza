@@ -699,28 +699,9 @@
                             </div>
                         </li>
 
-
-
-                        <li class="nav-item">
-                            <a class="nav-link menu-link" href="#sidebarCliente" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarCliente">
-                                <i class="bx bx-user"></i> <span data-key="t-dashboards">Clientes</span>
-                            </a>
-                            <div class="collapse menu-dropdown" id="sidebarCliente">
-
-                                <ul class="nav nav-sm flex-column">
-                                    <li class="nav-item">
-                                        <a href="{{ route('salon.index') }}" class="nav-link" data-key="t-analytics"> Registrar </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="{{ route('salon.index') }}" class="nav-link" data-key="t-analytics"> Historial </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="#sidebarControl" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarControl">
-                                <i class="bx bx-comment"></i> <span data-key="t-dashboards">Comentarios</span>
+                                <i class="bx bx-user"></i> <span data-key="t-dashboards">Clientes</span>
                             </a>
                             <div class="collapse menu-dropdown" id="sidebarControl">
 
